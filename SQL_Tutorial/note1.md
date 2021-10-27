@@ -3,7 +3,7 @@
 ## 기본 구조
     SELECT 칼럼명(열), 칼럼명, 
     FROM 테이블명 
-    WhERE 조건식
+    WHERE 조건식 ;
     
 ### 1)SELECT : 원하는 열(칼럼)을 선택해 데이터를 가져온다. 무엇을
 ### 2) FROM : SELECT에서 선택한 열을 어느 테이블에서 가져올지 결정. 어디에서
@@ -13,7 +13,54 @@
 
 
 ### * 전체 열을 보고싶다면 ?
-SELECT * FROM 을 통해 전체 열 확인 가능
+    SELECT * FROM 을 통해 전체 열 확인 가능
+
+# 2. Select Distinct
+-  SQL중복제거 키워드 
+
+## 기본 구조
+    SELECT DISTINCT 칼럼명 FROM 테이블명 ;
+- 해당 테이블의 특정 열의 내용들을 중복되지않고 고유한 자료들만으로 결과가 나온다.
+
+### * 반환된 자료들의 수량을 확인하려면? 
+     SELECT COUNT(DISTINCT 칼럼명) FROM 테이블명 ; 
 
 
 
+# 3. Where
+
+- 특정 조건에 부합하는 내용만 조회하고 싶을 때 사용하는 키워드 
+
+## 기본 구조
+
+    SELECT 칼럼명(열), 칼럼명, 
+    FROM 테이블명 
+    WHERE 조건, 조건, ... ;
+## 예제1 
+Customers테이블에서 Country 열의 내용이 'Mexico'인 것만 조회하고 싶을 때,
+
+    SELECT * FROM Customers
+    WHERE Country='Mexico'; 
+
+## 조건연산자
+- = 같다
+- <>, != 같지 않다. 
+- !< ~보다 작지 않다. 
+- BETWEEN AND 두개의 특정한 값 사이
+- IS NULL 값이 NULL 이다.
+- LIKE ~ 특정 패턴과 일치하다. 
+
+- IN 조건문의 값을 여러개로 설정
+
+## 예제2 
+LIKE 
+- s로 시작하는 모든 문자열 데이터 
+
+        WHERE Country LIKE 's%'
+- s로 시작하는 3자리의 문자열 데이터
+
+        WHERE Country LIKE 's__'
+## 예제3
+- Country 열의 내용이 'Mexico'와 'Korea'인 것만을 조회하고 싶을 때,
+
+        WHERE Country IN ('Mexico', 'Korea'); 
