@@ -52,15 +52,14 @@ Customers테이블에서 Country 열의 내용이 'Mexico'인 것만 조회하�
 
 - IN 조건문의 값을 여러개로 설정
 
-## 예제2 
-LIKE 
+## 예제2 : LIKE 
 - s로 시작하는 모든 문자열 데이터 
 
         WHERE Country LIKE 's%'
 - s로 시작하는 3자리의 문자열 데이터
 
         WHERE Country LIKE 's__'
-## 예제3
+## 예제3 : IN 
 - Country 열의 내용이 'Mexico'와 'Korea'인 것만을 조회하고 싶을 때,
 
         WHERE Country IN ('Mexico', 'Korea'); 
