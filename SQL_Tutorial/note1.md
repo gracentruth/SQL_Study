@@ -77,5 +77,30 @@ Customers테이블에서 Country 열의 내용이 'Mexico'인 것만 조회하�
  - NOT 연산자 뒤의 조건이 참이 아닌 경우의 것들을 조회
 
 
+# 5. Order by 
+- 데이터들을 오름, 내림차순으로 정렬하는 키워드
+- Order by는 기본적으로 오름차순으로 정렬을 한다
 
+## 기본 구조
+
+        SELECT column1, column2, ...
+        FROM table_name
+        ORDER BY column1, column2, ... ASC|DESC;
+## 예제1 : 내림차순
+
+        SELECT * FROM Customers
+        ORDER BY Country DESC;
+
+## 예제2 : 두개 이상의 열 정렬 
+
+- Country열을 오름 차순으로 정렬하고, Country의 값이 같을 경우 CustomerName을 기준으로 정렬한다. 
+
+        SELECT * FROM Customers
+        ORDER BY Country, CustomerName;
+
+## 예제 3 : 두개 이상의 열 정렬
+- Country 열은 오름차순으로, CustomerName열을 내림차순으로 정렬한다. 
+
+        SELECT * FROM Customers
+        ORDER BY Country ASC, CustomerName DESC;
 
