@@ -63,3 +63,19 @@ Customers테이블에서 Country 열의 내용이 'Mexico'인 것만 조회하�
 - Country 열의 내용이 'Mexico'와 'Korea'인 것만을 조회하고 싶을 때,
 
         WHERE Country IN ('Mexico', 'Korea'); 
+
+# 4. And, Or, Not 
+- WHERE 절에서 사용되는 연산자 
+
+ 1. AND 
+ - AND 연산자로 연결된 여러 조건들이 모두 참인 것들을 조회
+
+ 2. OR
+ - OR 연산자로 연결된 여러 조건들 중 하나 이상의 조건이 참인 것들을 조회 
+
+ 3. NOT 
+ - NOT 연산자 뒤의 조건이 참이 아닌 경우의 것들을 조회
+
+
+
+
