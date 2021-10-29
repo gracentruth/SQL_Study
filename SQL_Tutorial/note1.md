@@ -127,3 +127,14 @@ Customers테이블에서 Country 열의 내용이 'Mexico'인 것만 조회하�
 
 
 
+# 7. NULL Values
+- 아무 값이 없는 것을 의미함 
+- =, <, or <> 와 같은 비교 연산자로 NULL인지 확인할 수 없음
+- IS NULL, IS NOT NULL 연산자 사용 
+
+## 기본 구조
+
+    SELECT column_names
+    FROM table_name
+    WHERE column_name IS NULL; 
+
