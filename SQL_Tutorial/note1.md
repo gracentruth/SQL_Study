@@ -104,3 +104,26 @@ Customers테이블에서 Country 열의 내용이 'Mexico'인 것만 조회하�
         SELECT * FROM Customers
         ORDER BY Country ASC, CustomerName DESC;
 
+# 6. Insert into 
+- 테이블에 새로운 자료를 추가하는 키워드
+
+## 기본구조
+-  특정 열에 데이터를 추가하고 싶을 때 
+
+        INSERT INTO table_name (column1, column2, column3, ...)
+        VALUES (value1, value2, value3, ...);
+-  모든 열에 데이터를 추가하고 싶을 때 (한 행 전체 추가)
+
+        INSERT INTO table_name
+        VALUES (value1, value2, value3, ...);
+
+## 예제
+
+    INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+    VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
+
+
+<img src="https://user-images.githubusercontent.com/63465350/139407500-099088c3-a9bb-48c6-9495-8bbe808c62dd.png" heght="300">
+
+
+
