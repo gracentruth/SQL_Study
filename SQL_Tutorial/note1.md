@@ -138,3 +138,20 @@ Customers테이블에서 Country 열의 내용이 'Mexico'인 것만 조회하�
     FROM table_name
     WHERE column_name IS NULL; 
 
+# 8. Update 
+- 기존 테이블에 있는 값을 수정하는 키워드
+
+## 기본 구조
+- 원하는 테이블의 특정 조건에 부합하는 열의 값을 수정 
+
+        UPDATE table_name
+        SET column1 = value1, column2 = value2, ...
+        WHERE condition;
+
+## 예제 
+
+    UPDATE Customers
+    SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
+    WHERE CustomerID = 1;
+
+    
