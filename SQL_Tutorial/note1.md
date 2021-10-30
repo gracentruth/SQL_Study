@@ -154,4 +154,22 @@ Customers테이블에서 Country 열의 내용이 'Mexico'인 것만 조회하�
     SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
     WHERE CustomerID = 1;
 
-    
+
+# 9. Delete
+- 기존 테이블에 있는 값을 삭제하는 키워드
+
+## 기본 구조
+- 원하는 테이블의 특정조건에 부합하는 부분을 삭제 
+
+        DELETE FROM table_name WHERE condition;
+
+## 예제1     
+- 테이블에서 조건에 부합하는 행 전체를 삭제
+
+        DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
+
+## 예제 2 : 모든 데이터 삭제
+- Customers 라는 테이블의 모든 데이터 삭제
+
+        DELETE FROM Customers;
+
