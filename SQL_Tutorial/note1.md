@@ -173,3 +173,4 @@ Customers테이블에서 Country 열의 내용이 'Mexico'인 것만 조회하�
 
         DELETE FROM Customers;
 
+
