@@ -180,10 +180,21 @@ Customers테이블에서 Country 열의 내용이 'Mexico'인 것만 조회하�
 
 ## 기본구조
 
-        SELECT TOP 갯수 or 퍼센트
+        SELECT TOP 개수 or 퍼센트
 
 ## 예제
         SELECT TOP 3 * FROM Customer
 
         SELECT TOP 50 PERCENT * FROM Customer
 
+# 11. Limit 
+- 많은 데이터들 중 특정 몇개의 데이터만 출력하고 싶을 때 사용하는 키워드
+- Select top과 같은 기능
+- for mySQL 
+
+## 기본 구조
+
+        SELECT * FROM Customers
+        LIMIT 개수;
+
+        
