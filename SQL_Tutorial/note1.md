@@ -174,3 +174,16 @@ Customers테이블에서 Country 열의 내용이 'Mexico'인 것만 조회하�
         DELETE FROM Customers;
 
 
+# 10. Select Top
+- 많은 데이터들 중 특정 몇개의 데이터만 출력하고 싶을 때 사용하는 키워드
+- for SQL server
+
+## 기본구조
+
+        SELECT TOP 갯수 or 퍼센트
+
+## 예제
+        SELECT TOP 3 * FROM Customer
+
+        SELECT TOP 50 PERCENT * FROM Customer
+
