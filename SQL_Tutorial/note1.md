@@ -198,7 +198,7 @@ Customers테이블에서 Country 열의 내용이 'Mexico'인 것만 조회하�
         LIMIT 개수;
 
 # 12. Min() Max()
-- 선택된 열에서 최소, 최대 값을 반환해주는 함수 
+- 선택된 행에서 최소, 최대 값을 반환해주는 함수 
 
 ## 기본 구조
 
@@ -217,3 +217,27 @@ Customers테이블에서 Country 열의 내용이 'Mexico'인 것만 조회하�
         FROM Products; 
 
 <img src="https://user-images.githubusercontent.com/63465350/139871167-acbd3b8a-4c9c-46df-9a88-8bf41b00ff61.png" heght="300">
+
+
+# 13. COUNT()
+- row(열)의 갯수를 세서 반환해주는 함수 
+## 기본 형식
+
+        SELECT COUNT(column_name)
+        FROM table_name
+        WHERE condition;                
+
+# 14. AVG()
+- 숫자로 이루어진 행의 평균을 반환해주는 함수
+## 기본 형식 
+        SELECT AVG(column_name)
+        FROM table_name
+        WHERE condition;
+
+# 15. SUM()
+- 숫자로 이루어진 행의 합을 반환해주는 함수
+
+## 기본 형식
+        SELECT SUM(column_name)
+        FROM table_name
+        WHERE condition;
