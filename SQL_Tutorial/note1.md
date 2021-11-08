@@ -241,3 +241,39 @@ Customers테이블에서 Country 열의 내용이 'Mexico'인 것만 조회하�
         SELECT SUM(column_name)
         FROM table_name
         WHERE condition;
+
+
+# 16. Wildcard 
+- 문자열의 다른 문자를 대체하는 데 사용 
+- LIKE 연산자와 함께 사용된다.
+- % , _ , []
+
+## 1) %
+: 하나 이상의 character 
+### 예제
+- 'es'가 있는 City에 있는 모든 고객 
+        SELECT * FROM Customer
+        WHERE City LIKE '%es%';
+
+## 2) _ 
+: 하나의 character
+### 예제 
+'L'로 시작하고 그다음 위치엔 임의의 문자 그다음 위치엔 'n'문자 그다음에 임의의 문자, 그 다음에 'on'이 있는 City의 모든 고객  
+
+        SELECT * FROM Customers
+        WHERE City LIKE 'L_n_on';
+
+##  3) [ ]
+- [] : 일치시킬 문자와 세트의 범위를 정의
+- [^] 또는 [!] : 일치하지 않는 문자의 집합과 범위를 정의
+
+### 예제 1
+- 'b', 's' 또는 'p'로 시작하는 City에 있는 모든 고객
+
+        SELECT * FROM Customers
+        WHERE City LIKE '[bsp]%';
+### 예제 2 
+- 'b', 's' 또는 'p'로 시작하는 City가 아닌 모든 고객
+
+        SELECT * FROM Customers
+        WHERE City LIKE '[!bsp]%';
